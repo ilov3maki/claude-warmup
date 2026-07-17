@@ -2,7 +2,8 @@ name: Claude Code Warmup
 
 on:
   schedule:
-    - cron: '0 9 * * 1-5'
+    # 6:00 AM Istanbul (UTC+3) weekdays → anchors window until 11:00 AM
+    - cron: '0 3 * * 1-5'
   workflow_dispatch: {}
 
 concurrency:
